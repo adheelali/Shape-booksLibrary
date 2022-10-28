@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/61ee4ff276.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Book-store</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div class="nav__container">
+          <ul class="nav__links">
+            <li>
+              <i class="fa-solid fa-shapes"></i>
+            </li>
+            <li>
+              <a href="#">Shop</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="#">Team</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-bars cursor" onclick="openMenu()"></i>
+            </li>
+          </ul>
+          <ul class="nav__search">
+            <li>
+              <i class="fa-solid fa-magnifying-glass cursor"></i>
+            </li>
+            <li>
+              <button>Sign Up</button>
+            </li>
+          </ul>
+        </div>
+        <div class="menu__backdrop">
+          <button class="btn__menu btn__menu-close" onclick="closeMenu()">
+            <i class="fas fa-times"></i>
+          </button>
+          <ul>
+            <li class="menu__list">
+              <a
+                onclick="closeMenu()"
+                href="#"
+                class="menu__list menu__link"
+                >About</a
+              >
+            </li>
+            <li class="menu__list">
+              <a
+                onclick="closeMenu()"
+                href="#"
+                class="menu__list menu__link"
+                >Blog</a
+              >
+            </li>
+            <li class="menu__list">
+              <a
+                onclick="closeMenu()"
+                href="#"
+                class="menu__list menu__link"
+                >Contact Us</a
+              >
+            </li>
+            <li class="menu__list">
+              <a
+                onclick="closeMenu()"
+                href="#"
+                class="menu__link"
+                >Login</a
+              >
+            </li>
+            <li class="menu__list">
+              <a
+                onclick="closeMenu()"
+                href=""
+                class="menu__backdrop--button"
+                >Sign Up</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header__container">
+        <div class="row">
+          <header>
+            <div class="header__container--left">
+              <div class="header__fade">
+                <p>BEST CHOICE</p>
+                <h1>BOOKS</h1>
+                <h1>FOR ALL</h1>
+                <div class="input__container">
+                  <input type="text" placeholder="Enter" />
+                  <i class="fa-solid fa-arrow-right"></i>
+                  <p>Go to Shop</p>
+                </div>
+              </div>
+              <div class="header__para">
+                Regular reading allows you to be better formulate your own
+                thoughts. our
+                <span class="CLorange">team of professionals</span>
+                willl always help you make up your mind and find a book for fun
+                activites
+              </div>
+            </div>
+            <div class="header__container--right">
+              <div class="color__wrapper">
+                <div class="orange">
+                  CLASSIC
+                  <i class="fa-regular fa-circle"></i>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <div class="color__wrapper">
+                <div class="blue">
+                  MODERN ART
+                  <div class="triangle">&#8420;</div>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <div class="color__wrapper">
+                <div class="green">
+                  NONFICTION
+                  <i class="fa-regular fa-square"></i>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+              <div class="color__wrapper">
+                <div class="transparent"></div>
+              </div>
+            </div>
+            <figure>
+              <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149320038.jpg?w=2000" alt="">
+            </figure>
+          </header>
+        </div>
+      </div>
+      <main>
+        <div class="container border">
+          <div class="row">
+            <h1 class="section__title">Why Us?</h1>
+            <div id="features">
+              <div class="feature">
+                <div class="feature__img--wrapper">
+                  <i class="fa-solid fa-bolt"></i>
+                </div>
+                <div class="feature__info">
+                  <h4>Quick Delivary</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__img--wrapper">
+                  <i class="fa-sharp fa-solid fa-user-shield"></i>
+                </div>
+                <div class="feature__info">
+                  <h4>Secure Payment</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__img--wrapper">
+                  <i class="fa-solid fa-thumbs-up"></i>
+                </div>
+                <div class="feature__info">
+                  <h4>Best quality</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+              </div>
+              <div class="feature">
+                <div class="feature__img--wrapper">
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="feature__info">
+                  <h4>Return Guarantee</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <h1 class="section__title">Featured Books</h1>
+            <div id="featured">
+              <div class="book">
+                <figure>
+                  <img src="./assets/atomic habits.jpg" alt="" />
+                </figure>
+                <div class="book__info">
+                  <h4>Atomic Habits</h4>
+                  <p>NONFICTION</p>
+                  <h3>
+                    <span class="book__price">$ 12.90</span>
+                    <span class="book__salePrice">$ 30.00</span>
+                  </h3>
+                </div>
+              </div>
+              <div class="book">
+                <figure>
+                  <img src="./assets/book-1.jpeg" alt="" />
+                </figure>
+                <div class="book__info">
+                  <h4>10X rule</h4>
+                  <p>Action</p>
+                  <h3>
+                    <span class="book__price">$ 32.50</span>
+                    <span class="book__salePrice">$ 60.00</span>
+                  </h3>
+                </div>
+              </div>
+              <div class="book">
+                <figure>
+                  <img src="./assets/deep work.jpeg" alt="" />
+                </figure>
+                <div class="book__info">
+                  <h4>Deep works</h4>
+                  <p>Suspence</p>
+                  <h3>
+                    <span class="book__price">$ 40.75</span>
+                    <span class="book__salePrice">$ 90.00</span>
+                  </h3>
+                </div>
+              </div>
+              <div class="book">
+                <figure>
+                  <img src="./assets/crack the coding interview.png" alt="" />
+                </figure>
+                <div class="book__info">
+                  <h4>crack the coding interview</h4>
+                  <p>Romance</p>
+                  <h3>
+                    <span class="book__price">$ 11.00</span>
+                    <span class="book__salePrice">$ 20.00</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <h1 class="section__title">Best sellers</h1>
+            <div id="bestSales">
+              <div class="book">
+                <figure>
+                  <img src="./assets/book-2.jpeg" alt="" />
+                </figure>
+                <div class="book__info">
+                  <h4>Be obsessed or be average</h4>
+                  <p>Sports</p>
+                  <h3>
+                    <span class="book__price">$ 23.30</span>
+                    <span class="book__salePrice">$ 50.00</span>
+                  </h3>
+                </div>
+              </div>
+              <div class="book">
+                <figure>
+                  <img src="./assets/book-3.jpeg" alt="" />
+                </figure>
+                <div class="book__info">
+                  <h4>Rich dad poor dad</h4>
+                  <p>Comedy</p>
+                  <h3>
+                    <span class="book__price">$ 34.00</span>
+                    <span class="book__salePrice">$ 60.00</span>
+                  </h3>
+                </div>
+              </div>
+              <div class="book">
+                <figure>
+                  <img src="./assets/book-4.jpeg" alt="" />
+                </figure>
+                <div class="book__info">
+                  <h4>Cash flow</h4>
+                  <p>Mystery</p>
+                  <h3>
+                    <span class="book__price">$ 23.60</span>
+                    <span class="book__salePrice">$ 40.00</span>
+                  </h3>
+                </div>
+              </div>
+              <div class="book">
+                <figure>
+                  <img src="./assets/book-5.jpeg" alt="" />
+                </figure>
+                <div class="book__info">
+                  <h4>Power</h4>
+                  <p>Facts</p>
+                  <h3>
+                    <span class="book__price">$ 20.00</span>
+                    <span class="book__salePrice">$ 40.00</span>
+                  </h3>
+                </div>
+              </div>
+              <div class="book">
+                <figure>
+                  <img src="./assets/book-6.jpeg" alt="" />
+                </figure>
+                <div class="book__info">
+                  <h4>The five second rule</h4>
+                  <p>Racing</p>
+                  <h3>
+                    <span class="book__price">$ 50.00</span>
+                    <span class="book__salePrice">$ 60.00</span>
+                  </h3>
+                </div>
+              </div>
+              <div class="book">
+                <figure>
+                  <img src="./assets/book-7.jpg" alt="" />
+                </figure>
+                <div class="book__info">
+                  <h4>Your next five moves</h4>
+                  <p>Shounen</p>
+                  <h3>
+                    <span class="book__price">$ 35.50</span>
+                    <span class="book__salePrice">$ 65.00</span>
+                  </h3>
+                </div>
+              </div>
+              <div class="book">
+                <figure>
+                  <img src="./assets/david goggins.jpeg" alt="" />
+                </figure>
+                <div class="book__info">
+                  <h4>can't hurt me</h4>
+                  <p>Fantasy</p>
+                  <h3>
+                    <span class="book__price">$ 60.00</span>
+                    <span class="book__salePrice">$ 120.00</span>
+                  </h3>
+                </div>
+              </div>
+              <div class="book">
+                <figure>
+                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPT76jarWirqqIGy2XxoWkM9jLkYlyhbSaUg&usqp=CAU" alt="" />
+                </figure>
+                <div class="book__info">
+                  <h4>Shatter me</h4>
+                  <p>Action</p>
+                  <h3>
+                    <span class="book__price">$ 13.20</span>
+                    <span class="book__salePrice">$ 24.00</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container border">
+          <div class="row">
+            <div id="searchBook">
+              <h2 class="searchBook__para">Subscribe our newsletter for newest books updates</h3>
+              <div class='searchBook__input--container'>
+                <input type="text" placeholder="Type your email here">
+                <button>Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <div class="container border">
+        <div class="row">
+          <footer>
+            <div class="footer__logo">
+              <a href="#">
+                <i class="fa-solid fa-shapes"></i>
+                <p>
+                  Top
+                  <i class="fa-solid fa-arrow-up"></i>
+                </p>
+              </a>
+            </div>
+            <div class="footer__links">
+              <a href="#">Home</a>
+              <a href="#">About</a>
+              <a href="#">Blog</a>
+              <a href="#">Shop</a>
+            </div>
+            <p>Copyrights &#169; 2022 ShapeBooks</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!--  -->
