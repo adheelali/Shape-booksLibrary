@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  background-color: #f6f6c9;
+  background-color: lightgrey;
 }
 
 a {
@@ -91,7 +91,6 @@ nav {
   max-width: 1200px;
   padding: 0 30px 20px 30px;
   height: 100px;
-  background-color: #f6f6c9;
   margin: 0 auto;
 }
 
@@ -262,7 +261,7 @@ header {
 .header__container--left {
   height: 100%;
   width: 50%;
-  padding: 2rem 0;
+  padding: 0 0 2rem 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -395,7 +394,7 @@ header {
 }
 
 .transparent {
-  background-color: #f6f6c9;
+  background-color: lightgrey;
   transform: translateY(320%) translateX(-6.5%);
   width: 525px;
   padding: 50px 50px 11px 70px;
@@ -403,7 +402,10 @@ header {
 
 header > figure {
   display: none;
+  border-radius: 50px;
+  overflow: hidden;
 }
+
 
 /* header animations */
 
@@ -595,6 +597,7 @@ SearchBooks
 
 .searchBook__input--container {
   display: flex;
+  justify-content: center;
 }
 
 .searchBook__input--container > input {
@@ -682,10 +685,12 @@ SMALL PHONES
   .header__container--right {
     display: none;
   }
+
   header > figure {
     display: block;
     width: 50%;
   }
+
   .searchBook__para {
     width: 60%;
   }
@@ -695,9 +700,11 @@ SMALL PHONES
   header > figure {
     display: none;
   }
+
   .header__container--left {
     width: 80%;
   }
+
   .header__para {
     margin-top: 10%;
   }
@@ -707,24 +714,31 @@ SMALL PHONES
   header {
     flex-direction: column;
   }
+
   .header__container--left {
     width: 100%;
   }
+
   .header__para {
     width: 70%;
   }
+
   .nav__links > li:has(a) {
     display: none;
   }
+
   .nav__search > li:has(button) {
     display: none;
   }
+
   .nav__links > li:last-child {
     display: block;
   }
+
   .feature {
     width: 50%;
   }
+
   .book {
     width: 50%;
     padding: 4rem;
@@ -733,48 +747,66 @@ SMALL PHONES
 
 @media (max-width: 600px) {
   .header__container--left > div > h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
+
   .header__para {
     width: 100%;
   }
+
   .input__container {
     margin-top: 8px;
   }
+
   .input__container > input {
     width: 70%;
     padding-left: 18px;
     padding-right: 40px;
   }
+
   .input__container > p {
     right: -5%;
   }
+
   .input__container > .fa-solid {
     right: calc(100% - 68%);
   }
+
   .feature {
     width: 100%;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-bottom: 8px;
   }
+
   .feature__info > h4 {
     margin-top: 8px;
     text-align: center;
   }
+
   .feature__info > p {
     text-align: center;
   }
+
   .feature__img--wrapper {
     margin: 0;
   }
+
   .book {
     padding: 1rem;
   }
-  .searchBook__input--container > input {
-    width: 80%;
+
+  #search {
+    padding: 3rem 0;
   }
+
+  .searchBook__input--container > input {
+    max-width: 60%;
+  }
+  
   .searchBook__para {
     width: 90%;
+    font-size: 20px;
   }
 }
