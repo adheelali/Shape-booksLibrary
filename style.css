@@ -95,7 +95,7 @@ nav {
 }
 
 .nav__container {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid white;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -117,7 +117,7 @@ nav {
   padding-right: 16px;
   padding-top: 4px;
   padding-bottom: 4px;
-  border-right: 1px solid black;
+  border-right: 1px solid white;
 }
 
 .nav__links > li:last-child {
@@ -138,7 +138,7 @@ nav {
 }
 
 .nav__search > li {
-  border-left: 1px solid black;
+  border-left: 1px solid white;
   padding-left: 16px;
   font-size: 16px;
 }
